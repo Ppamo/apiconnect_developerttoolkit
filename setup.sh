@@ -1,6 +1,6 @@
 #!/bin/bash
 
 IMAGENAME=apiconnect
-IMAGEVERSION=0.1.3
+IMAGEVERSION=4.0.16
 
 docker build -t $IMAGENAME:$IMAGEVERSION docker/
