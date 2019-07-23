@@ -17,6 +17,10 @@ docker run --rm -ti ppamo/apiconnect_developertoolkit cat /usr/local/lib/node_mo
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
 ##### Español
 Esta imagen está basada en node:8-alpine e instala el *API Connect Developer Toolkit*, utilizando el paquete npm [apiconnect](https://www.npmjs.com/package/apiconnect).
 
