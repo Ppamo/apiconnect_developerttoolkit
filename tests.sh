@@ -27,7 +27,7 @@ fi
 printf -- $YELLOW"+ Waiting for server to start at port$BLUE 9090$YELLOW ."$RESET
 FOUND=0
 COUNTER=0
-while [ $FOUND -ne 1 -a $COUNTER -le 60 ]
+while [ $FOUND -ne 1 -a $COUNTER -le 180 ]
 do
 	COUNTER=$(( COUNTER+1 ))
 	sleep 0.5
