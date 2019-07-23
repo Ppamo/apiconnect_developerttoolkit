@@ -1,3 +1,5 @@
-sut:
-  build: .
-  command: /tests.sh
+version: '3.3'
+services:
+  sut:
+    image: ppamo/apiconnect:${CACHE_TAG}
+    command: sh -c /tests.sh
