@@ -11,7 +11,11 @@ WORKDIR /apis
 
 RUN apk update && apk upgrade && \
 	apk add curl tini alpine-sdk python
+
 COPY run.sh tests.sh /
+
+RUN chmod +x /run.sh /tests.sh
+
 RUN npm config -g set strict-ssl false && \
 	npm config set user root && \
 	npm install -g apiconnect@2.2.12
