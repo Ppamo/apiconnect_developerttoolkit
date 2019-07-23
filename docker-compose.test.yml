@@ -1,5 +1,5 @@
 version: '3.3'
 services:
   sut:
-    image: ppamo/apiconnect:${CACHE_TAG}
+    image: ppamo/apiconnect_developertoolkit:${CACHE_TAG}
     command: sh -c /tests.sh
