@@ -9,13 +9,12 @@ ENV DISABLE_ANALYTICS Y
 EXPOSE 9090
 WORKDIR /apis
 
-COPY run.sh tests.sh /
 RUN apk update && apk upgrade && \
-	apk add curl tini alpine-sdk python && \
-	chmod +x /run.sh /tests.sh
+	apk add curl tini alpine-sdk python
+COPY run.sh tests.sh /
 RUN npm config -g set strict-ssl false && \
 	npm config set user root && \
-	npm install -g apiconnect@2.1.19
+	npm install -g apiconnect@2.2.9
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["/run.sh"]
