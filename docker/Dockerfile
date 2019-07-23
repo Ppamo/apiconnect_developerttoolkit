@@ -4,13 +4,17 @@ MAINTAINER pablo@ppamo.cl
 ENV HOST 0.0.0.0
 ENV PORT 9090
 ENV SKIP_LOGIN true
+ENV ACCEPT_LICENSE N
+ENV DISABLE_ANALYTICS Y
 EXPOSE 9090
 WORKDIR /apis
 
+COPY run.sh /
 RUN apk update && apk upgrade && \
-	apk add curl alpine-sdk python
+	apk add curl tini alpine-sdk python
 RUN npm config -g set strict-ssl false && \
 	npm config set user root && \
-	npm install -g apiconnect@4.0.29
+	npm install -g apiconnect@1.0.3
 
-CMD ["apic", "edit", "--accept-license"]
+ENTRYPOINT ["/sbin/tini", "--"]
+CMD ["/run.sh"]
