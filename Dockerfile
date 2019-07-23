@@ -9,7 +9,7 @@ ENV DISABLE_ANALYTICS Y
 EXPOSE 9090
 WORKDIR /apis
 
-COPY run.sh /
+COPY run.sh tests.sh /
 RUN apk update && apk upgrade && \
 	apk add curl tini alpine-sdk python
 RUN npm config -g set strict-ssl false && \
