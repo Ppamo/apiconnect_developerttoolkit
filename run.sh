@@ -8,4 +8,7 @@ then
 fi
 
 apic --accept-license > /dev/null
-apic edit
+apic edit << EOF
+
+
+EOF
