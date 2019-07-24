@@ -13,9 +13,12 @@ PORT=9090
 
 printf -- $GREEN"* Running tests:\n"$RESET
 printf -- $YELLOW"+ Preparing environment .. ${GREEN}OK\n"$RESET
-apic --accept-license > /dev/null
+apic --accept-license > /dev/null << EOF
+
+EOF
 printf -- $YELLOW"+ Starting $BLUEAPI Connect Developer Toolkit ."$RESET
 SKIP_LOGIN=true apic edit > /.apic.log 2>&1 &
+
 APIC_PID=$!
 ps -a | grep $APIC_PID > /dev/null
 if [ $? -eq 0 ]
