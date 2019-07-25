@@ -18,7 +18,7 @@ RUN chmod +x /run.sh /tests.sh
 
 RUN npm config -g set strict-ssl false && \
 	npm config set user root && \
-	npm install -g apiconnect@2.1.16
+	npm install -g apiconnect@2.1.19
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["/run.sh"]
