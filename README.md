@@ -1,6 +1,6 @@
 # API Connect Developer Toolkit
 ##### English:
-This image is based on *node:8-alpine* and it installs the *API Connect Developer Toolkit*, using the NPM package [apiconnect](https://www.npmjs.com/package/apiconnect).
+This image is based on *node:8-alpine* and it installs the *API Connect Developer Toolkit*, using the NPM package [Api Connect](https://www.npmjs.com/package/apiconnect).
 
 ### Usage
 To start the *Developer Toolkit* Web interface you should run the following command from a command line console connected to docker:
@@ -32,7 +32,7 @@ The tags were copied from the NPM Repository of [API Connect](https://www.npmjs.
 ***
 
 ##### Español
-Esta imagen está basada en node:8-alpine e instala el *API Connect Developer Toolkit*, utilizando el paquete NPM [apiconnect](https://www.npmjs.com/package/apiconnect).
+Esta imagen está basada en node:8-alpine e instala el *API Connect Developer Toolkit*, utilizando el paquete NPM [Api Connect](https://www.npmjs.com/package/apiconnect).
 
 ### Uso:
 Para iniciar la interfaz del *Developer Toolkit* debes ejecutar el siguiente comando desde una consola con acceso a docker:
