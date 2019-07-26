@@ -22,7 +22,7 @@ docker run --rm -ti \
 	cat /usr/local/lib/node_modules/apiconnect/non_ibm_license.txt
 ```
 
-## Tags:
+### Tags:
 
 The tags were copied from the NPM Repository of [API Connect](https://www.npmjs.com/package/apiconnect) package.   And these has been created to trigger the docker hub automated build process.   To differentiate a build from other I added a suffix indicating the build number.   As an example, the NPM package version *v1.0.3* has two build tags: *v1.0.3.0* and *v1.0.3.1*, but only one of those tag is available to pull, that means that the first build (*v1.0.3.0*) failed.
 
